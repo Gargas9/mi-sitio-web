@@ -1,0 +1,234 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "WestTrial";
+    src: url(./tipos/WestTrial/WestTrial-Regular.woff2) format(woff2);
+    font-weight: normal;
+    font-display: swap;
+
+}
+
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../tipos/Roboto.ttf") format("truetype-variations");
+    font-weight: 100 900;
+    font-display: swap;
+}
+
+body{
+    width:100vw;
+    min-height: 100vw;
+
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    font-weight: normal;
+
+    color: white;
+    background-color: rgb(24, 24, 16);
+
+    font-variation-settings: "wdth" 25, "opsz" 8, "wght" 200, "GRAD" 0;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+.bold {
+    font-variation-settings: "wdth" 25, "opsz" 8, "wght" 600, "GRAD" 0;
+
+}
+
+.italic {
+    font-variation-settings: "wdth" 25, "opsz" 8, "wght" 200, "GRAD" 0, "slnt" -10;
+}
+
+
+.header{
+    height: 100vh;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+  
+    .shika{
+        font-family: "Roboto";
+        font-size: 5rem;
+        font-variation-settings: "wdth" 200, "wght" 400;
+        transition: 200ms;
+
+        &:hover{
+            font-variation-settings: "wdth" 800, "wght" 800;
+
+        }
+    }
+
+    .texto-inicio {
+        
+        margin-left: auto;
+        text-align: right;
+
+        p{
+            width: 50vw;
+        }
+       
+    }
+
+   
+
+}
+ .ver-mas{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    margin-top: 5rem;
+
+    .marquesina{
+        text-align: left;
+        
+    }
+
+    .marquesina1{
+        text-align: right;
+        
+    }
+ }
+
+
+.presentacion{
+    margin-bottom: 3rem;
+    margin-top: -2rem;
+    padding: 0 3rem;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+
+/* HACER EL MENU BURGER?*/
+
+.hab{
+    padding: 0 2rem;
+    font-size: 4rem;
+
+    font-variation-settings: "wdth" 30, "opsz" 8, "wght" 200, "GRAD" 0;
+    transition: 300ms;
+
+    &:hover{
+        font-variation-settings: "wdth" 50, "opsz" 8, "wght" 600, "GRAD" 0;
+
+    }
+}
+
+
+.video {
+    width: 100%;
+    margin-top: 3rem;
+
+    .video1{
+        width: 100%;
+    }
+}
+
+
+.frase{
+    text-align: center;
+    padding: 5rem 5rem;
+}
+
+
+
+
+.galeria {
+    
+    display: flex;
+    justify-content: center;
+ 
+    .contenedor{
+        width: 100%;
+    }
+    .img{
+        width: 100%;
+    }
+}
+
+
+.pregunta {
+   
+    padding: 2rem;
+    font-size: 5rem;
+    line-height: 1;
+
+    & p:first-child{
+        text-align: left;
+        
+    }
+
+    & p:last-child{
+        text-align: right;
+        
+    }
+
+    
+}
+
+.movimiento{
+    font-variation-settings: "wdth" 25, "opsz" 8, "wght" 200, "GRAD" 0;
+
+
+    &:hover{
+        font-variation-settings: "wdth" 100, "opsz" 8, "wght" 200, "GRAD" 0;
+
+    }
+}
+
+.contacto{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+
+
+    .correo1{
+        font-variation-settings: "wdth" 25, "opsz" 8, "wght" 200, "GRAD" 0;
+
+        &:hover{
+            font-variation-settings: "wdth" 50, "opsz" 8, "wght" 600, "GRAD" 0;
+        }
+    }
+}
+
+
+
+.pie{
+   
+    border-top: 1px solid white;
+   
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 2rem;
+
+
+    .copyright{
+        font-variation-settings: "wdth" 25, "opsz" 8, "wght" 600, "GRAD" 0;
+
+    }
+
+    .arriba{
+        text-decoration: line-through;
+        font-variation-settings: "wdth" 25, "opsz" 8, "wght" 200, "GRAD" 0;
+
+        &:hover{
+            text-decoration: none;
+            font-variation-settings: "wdth" 25, "opsz" 8, "wght" 400, "GRAD" 0;
+        }
+    }
+}
